@@ -219,3 +219,108 @@ uint8 CLCD_u8WriteSpecialCharacter(uint8 copy_u8PatternNumber,uint8 copy_up8Patt
 	return Local_u8Errorstatus;
 
 }
+
+
+/*function that recieve x pos and y pos and the number of gride to be deleted*/
+void CLCD_voidClearGide(uint8 Copy_Xpos,uint8 Copy_Ypos,uint8 Copy_GridNum )
+{
+uint8 Local_u8Iterator;
+CLCD_voidGoToXY(Copy_Xpos,Copy_Ypos);
+for(Local_u8Iterator=0;Local_u8Iterator<Copy_GridNum;Local_u8Iterator++)
+{
+	 CLCD_voidSendData(32);//32 is the ascii of space
+}
+}
+
+
+/*function that print a string at specefic postion*/
+void CLCD_u8SendStringAtPos (uint8 copy_u8XPos,uint8 copy_u8YPos,const char *copy_Chstring)
+{
+CLCD_voidGoToXY(copy_u8XPos, copy_u8YPos);
+
+CLCD_u8SendString(copy_Chstring);
+}
+
+/*Hamoksha fucnction*/
+
+
+
+void Hamoksha(void)
+{
+
+	uint8  Local_u8MyPattern[8] ={0B01110, 0B01010,0B01110,0B00101,0B11111,0B10100,0B01010,0B10001};
+	uint8  Local_u8MyPattern2[8] ={0B01110,0B01010,0B01110,0B10100,0B11111,0B00101,0B11010,0B00010};
+
+	uint8 Local_u8Xpos=0;
+	uint8 Local_u8Ypos=0;
+	//PORT_voidInit();
+	//CLCD_voidInit ();
+	CLCD_u8WriteSpecialCharacter(0u,Local_u8MyPattern,Local_u8Xpos,Local_u8Ypos);
+
+
+		CLCD_u8SendStringAtPos(0u,1u,"motor dashboard");
+		_delay_ms(1000);
+		/*Display clear */
+		CLCD_voidSendCommand(1);
+
+		for (Local_u8Xpos=0;Local_u8Xpos<=15;Local_u8Xpos++)
+		{
+			CLCD_u8WriteSpecialCharacter(0u,Local_u8MyPattern,Local_u8Xpos,Local_u8Ypos);
+			_delay_ms(50);
+			CLCD_voidClearGide(Local_u8Xpos,Local_u8Ypos,1 );
+			_delay_ms(50);
+
+			CLCD_u8WriteSpecialCharacter(1u,Local_u8MyPattern2,Local_u8Xpos,Local_u8Ypos);
+			_delay_ms(50);
+			CLCD_voidClearGide(Local_u8Xpos,Local_u8Ypos,1 );
+			_delay_ms(50);
+
+		}
+
+		/*Display clear */
+		CLCD_voidSendCommand(1);
+
+}
+
+
+
+void Hamoksha_Reverse(void)
+{
+
+	uint8  Local_u8MyPattern[8] ={0B01110, 0B01010,0B01110,0B00101,0B11111,0B10100,0B01010,0B10001};
+	uint8  Local_u8MyPattern2[8] ={0B01110,0B01010,0B01110,0B10100,0B11111,0B00101,0B11010,0B00010};
+
+	sint8 Local_u8Xpos=15;
+	sint8 Local_u8Ypos=0;
+
+	CLCD_u8WriteSpecialCharacter(0u,Local_u8MyPattern,Local_u8Xpos,Local_u8Ypos);
+
+
+
+		/*Display clear */
+	//	CLCD_voidSendCommand(1);
+
+		for (Local_u8Xpos=15;Local_u8Xpos>=0;Local_u8Xpos--)
+		{
+			CLCD_u8WriteSpecialCharacter(0u,Local_u8MyPattern,Local_u8Xpos,Local_u8Ypos);
+			_delay_ms(150);
+			CLCD_voidClearGide(Local_u8Xpos,Local_u8Ypos,1 );
+			_delay_ms(150);
+
+			CLCD_u8WriteSpecialCharacter(1u,Local_u8MyPattern2,Local_u8Xpos,Local_u8Ypos);
+			_delay_ms(150);
+			CLCD_voidClearGide(Local_u8Xpos,Local_u8Ypos,1 );
+			_delay_ms(150);
+
+		}
+
+		/*Display clear */
+		CLCD_voidSendCommand(1);
+
+}
+
+
+
+
+
+
