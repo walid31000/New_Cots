@@ -1,25 +1,95 @@
-#ifndef DIO_REG_H
-#define DIO_REG_H
+/** ************************************************************
+ * @file   DIO_reg.h
+ *  @brief  Register definitions for the Digital Input/Output (DIO) module.
+ * @details This file contains the definitions for the registers associated with the Digital Input/Output (DIO) module of the microcontroller. It provides access to the Data Direction Register (DDR), Port Register (PORT), and Input Pins Register (PIN) for each port.
+ * @author   Walid Megherbi
+ *           <BR>
+ *           <EM>
+ *           Github: https://github.com/walid31000
+ *           </EM>
+ * @version   1.0.0
+ * @date     31/5/2023
+ * @copyright Walid Megherbi
 
-#define PORTA                     *((volatile uint8*)0x3B)
-#define DDRA                     *((volatile uint8*)0x3A)
-#define PINA                     *((volatile uint8*)0x39)
+*/
+
+#ifndef DIO_REG_H_
+#define DIO_REG_H_
+
+/**
+ * @brief Data Direction Register Address for Port A.
+ */
+#define  DDRA                       *((volatile uint8*) 0X3A)
+
+
+/**
+ * @brief Data Register Address for Port A.
+ */
+#define  PORTA                      *((volatile uint8*) 0X3B)
+
+/**
+ * @brief Input Pins Register Address for Port A.
+ */
+#define  PINA                      *((volatile uint8*) 0X39)
 
 
 
-#define PORTB                     *((volatile uint8*)0x38)
-#define DDRB                     *((volatile uint8*)0x37)
-#define PINB                     *((volatile uint8*)0x36)
+/**
+ * @brief Data Direction Register Address for Port B.
+ */
+
+#define  DDRB                       *((volatile uint8*) 0X37)
+
+/**
+ * @brief Data Register Address for Port B.
+ */
+
+#define  PORTB                      *((volatile uint8*) 0X38)
+
+/**
+ * @brief Input Pins Register Address for Port B.
+ */
+#define  PINB                      *((volatile uint8*) 0X36)
+
+/**
+ * @brief Data Direction Register Address for Port C.
+ */
 
 
-#define PORTC                     *((volatile uint8*)0x35)
-#define DDRC                     *((volatile uint8*)0x34)
-#define PINC                     *((volatile uint8*)0x33)
+
+#define  DDRC                       *((volatile uint8*) 0X34)
 
 
-#define PORTD                     *((volatile uint8*)0x32)
-#define DDRD                     *((volatile uint8*)0x31)
-#define PIND                     *((volatile uint8*)0x30)
+/**
+ * @brief Data Register Address for Port B.
+ */
+#define  PORTC                      *((volatile uint8*) 0X35)
+
+/**
+ * @brief Input Pins Register Address for Port C.
+ */
+#define  PINC                      *((volatile uint8*) 0X33)
+
+/**
+ * @brief Data Register Address for Port D.
+ */
+#define  DDRD                      *((volatile uint8*) 0X31)
+/**
+ * @brief Input Pins Register Address for Port D.
+ */
+
+#define  PORTD                      *((volatile uint8*) 0X32)
+
+/**
+ * @brief Input Pins Register Address for Port D.
+ */
+#define  PIND                      *((volatile uint8*) 0X30)
+
+
+
+
+
+
 
 
 
