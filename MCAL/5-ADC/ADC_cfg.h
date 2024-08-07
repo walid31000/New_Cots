@@ -1,3 +1,13 @@
+/**
+ * @file ADC_cfg.h
+ * @brief Configuration file for ADC module.
+ * @details This file contains configurable parameters for the ADC module such as voltage reference, resolution, interrupt enable, and prescaler.
+ * @version 1.0.0
+ * @date 31/5/2023
+ * @author Walid Megherbi
+ * @copyright Walid Megherbi
+ */
+
 #ifndef ADC_CFG_H
 #define ADC_CFG_H
 
@@ -27,7 +37,7 @@
  *
 */
 
-#define ADC_u8RESOLUTION           TEN_BITS
+#define ADC_u8RESOLUTION           EIGHT_BITS
 
 /*ADC autotrigger options:1-ENABLE
  *                         2-DISABLED*/
@@ -39,6 +49,9 @@
  *                                       2-DISABLED
  * */
 #define  ADC_u8INT_EN                DISABLED
+
+#define  ADC_u32TIMEOUT_COUNT        5000UL
+
 
 
 

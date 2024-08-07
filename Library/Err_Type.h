@@ -15,7 +15,7 @@
 
 
 
-#ifndef ERR_TYPE_H
+#ifndef  ERR_TYPE_H
 #define  ERR_TYPE_H
 
 
@@ -39,5 +39,16 @@
  */
 #define     NULL_PTR     2U   
 
+
+/**
+ * @brief Time out error.
+ */
+
+#define    TIMEOUT_ERR   3U
+
+/**
+ * @brief busy error.
+ */
+#define   BUSY_ERR      4U
 
 #endif

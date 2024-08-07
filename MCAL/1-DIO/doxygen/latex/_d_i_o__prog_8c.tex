@@ -1,0 +1,237 @@
+\doxysection{DIO\+\_\+prog.\+c File Reference}
+\hypertarget{_d_i_o__prog_8c}{}\label{_d_i_o__prog_8c}\index{DIO\_prog.c@{DIO\_prog.c}}
+
+
+Implementation of Digital Input/\+Output (DIO) functions.  
+
+
+{\ttfamily \#include "{}STD\+\_\+\+TYPES.\+h"{}}\newline
+{\ttfamily \#include "{}BIT\+\_\+\+MATH.\+h"{}}\newline
+{\ttfamily \#include "{}Err\+\_\+type.\+h"{}}\newline
+{\ttfamily \#include "{}DIO\+\_\+reg.\+h"{}}\newline
+{\ttfamily \#include "{}DIO\+\_\+interface.\+h"{}}\newline
+Include dependency graph for DIO\+\_\+prog.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_d_i_o__prog_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_d_i_o__prog_8c_aa5aa458dc52abff52f73a7356386ae1f}{DIO\+\_\+u8\+Set\+Pin\+Direction}} (\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}} copy\+\_\+\+Port, \mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1}{DIO\+\_\+\+Pin\+\_\+t}} copy\+\_\+\+Pin\+Num, \mbox{\hyperlink{_d_i_o__interface_8h_af1ef1fd95861ab1dcb1aaec712bc0cba}{DIO\+\_\+\+Pin\+Dir\+\_\+t}} copy\+\_\+\+Dir)
+\begin{DoxyCompactList}\small\item\em Sets the direction of a specific pin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_d_i_o__prog_8c_a44d50ab797c7a5d5093711de72fb357a}{DIO\+\_\+u8\+Set\+Port\+Direction}} (\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}} copy\+\_\+\+Port, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} copy\+\_\+u8\+Port\+Dir)
+\begin{DoxyCompactList}\small\item\em Sets the direction of all pins in a port. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_d_i_o__prog_8c_a5ca4a7430489d0f973fb878ea0d95538}{DIO\+\_\+u8\+Set\+Pin\+Value}} (\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}} copy\+\_\+\+Port, \mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1}{DIO\+\_\+\+Pin\+\_\+t}} copy\+\_\+\+Pin\+Num, \mbox{\hyperlink{_d_i_o__interface_8h_a62623c45c642f55900760eae93972003}{DIO\+\_\+\+Pin\+Val\+\_\+t}} copy\+\_\+\+Val)
+\begin{DoxyCompactList}\small\item\em Sets the value of a specific pin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_d_i_o__prog_8c_aaa619f07823dce35868135f206c46665}{DIO\+\_\+u8\+Set\+Port\+Value}} (\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}} copy\+\_\+\+Port, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} copy\+\_\+u8\+Port\+Val)
+\begin{DoxyCompactList}\small\item\em Sets the value of all pins in a port. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_d_i_o__prog_8c_ad8d3cd505765bc581d5eab44ffc2170f}{DIO\+\_\+u8\+Get\+Pin\+Value}} (\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}} copy\+\_\+\+Port, \mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1}{DIO\+\_\+\+Pin\+\_\+t}} copy\+\_\+\+Pin\+Num, \mbox{\hyperlink{_d_i_o__interface_8h_a62623c45c642f55900760eae93972003}{DIO\+\_\+\+Pin\+Val\+\_\+t}} \texorpdfstring{$\ast$}{*}copy\+\_\+p\+Val)
+\begin{DoxyCompactList}\small\item\em Gets the value of a specific pin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_d_i_o__prog_8c_aefed199f8703f5ad6caff1a7d2a5641a}{DIO\+\_\+u8\+Toggle\+Pin}} (\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}} copy\+\_\+\+Port, \mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1}{DIO\+\_\+\+Pin\+\_\+t}} copy\+\_\+\+Pin\+Num)
+\begin{DoxyCompactList}\small\item\em Toggles the value of a specific pin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of Digital Input/\+Output (DIO) functions. 
+
+\DoxyHorRuler{0}
+
+
+This file contains the implementation of functions for configuring and manipulating the Digital Input/\+Output (DIO) module. Functions include setting pin directions, setting pin values, toggling pin values, and reading pin values. \begin{DoxyAuthor}{Author}
+Walid Megherbi ~\newline
+ {\itshape  Github\+: \href{https://github.com/walid31000}{\texttt{ https\+://github.\+com/walid31000}} } 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+31/5/2023 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Walid Megherbi 
+\end{DoxyCopyright}
+
+
+Definition in file \mbox{\hyperlink{_d_i_o__prog_8c_source}{DIO\+\_\+prog.\+c}}.
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_d_i_o__prog_8c_ad8d3cd505765bc581d5eab44ffc2170f}\index{DIO\_prog.c@{DIO\_prog.c}!DIO\_u8GetPinValue@{DIO\_u8GetPinValue}}
+\index{DIO\_u8GetPinValue@{DIO\_u8GetPinValue}!DIO\_prog.c@{DIO\_prog.c}}
+\doxysubsubsection{\texorpdfstring{DIO\_u8GetPinValue()}{DIO\_u8GetPinValue()}}
+{\footnotesize\ttfamily \label{_d_i_o__prog_8c_ad8d3cd505765bc581d5eab44ffc2170f} 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} DIO\+\_\+u8\+Get\+Pin\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}}}]{copy\+\_\+\+Port}{, }\item[{\mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1}{DIO\+\_\+\+Pin\+\_\+t}}}]{copy\+\_\+\+Pin\+Num}{, }\item[{\mbox{\hyperlink{_d_i_o__interface_8h_a62623c45c642f55900760eae93972003}{DIO\+\_\+\+Pin\+Val\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{copy\+\_\+p\+Val}{}\end{DoxyParamCaption})}
+
+
+
+Gets the value of a specific pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+\+Port} & The port of the pin. \\
+\hline
+{\em copy\+\_\+\+Pin\+Num} & The pin number. \\
+\hline
+{\em copy\+\_\+p\+Val} & Pointer to store the retrieved value of the pin. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8 Status of the operation (OK for success, NOK for failure, NULL\+\_\+\+PTR for null pointer). 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_d_i_o__prog_8c_source_l00193}{193}} of file \mbox{\hyperlink{_d_i_o__prog_8c_source}{DIO\+\_\+prog.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{_d_i_o__prog_8c_ad8d3cd505765bc581d5eab44ffc2170f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_d_i_o__prog_8c_aa5aa458dc52abff52f73a7356386ae1f}\index{DIO\_prog.c@{DIO\_prog.c}!DIO\_u8SetPinDirection@{DIO\_u8SetPinDirection}}
+\index{DIO\_u8SetPinDirection@{DIO\_u8SetPinDirection}!DIO\_prog.c@{DIO\_prog.c}}
+\doxysubsubsection{\texorpdfstring{DIO\_u8SetPinDirection()}{DIO\_u8SetPinDirection()}}
+{\footnotesize\ttfamily \label{_d_i_o__prog_8c_aa5aa458dc52abff52f73a7356386ae1f} 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} DIO\+\_\+u8\+Set\+Pin\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}}}]{copy\+\_\+\+Port}{, }\item[{\mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1}{DIO\+\_\+\+Pin\+\_\+t}}}]{copy\+\_\+\+Pin\+Num}{, }\item[{\mbox{\hyperlink{_d_i_o__interface_8h_af1ef1fd95861ab1dcb1aaec712bc0cba}{DIO\+\_\+\+Pin\+Dir\+\_\+t}}}]{copy\+\_\+\+Dir}{}\end{DoxyParamCaption})}
+
+
+
+Sets the direction of a specific pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+\+Port} & The port of the pin. \\
+\hline
+{\em copy\+\_\+\+Pin\+Num} & The pin number. \\
+\hline
+{\em copy\+\_\+\+Dir} & The direction of the pin (input or output). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8 Status of the operation (OK for success, NOK for failure). 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_d_i_o__prog_8c_source_l00032}{32}} of file \mbox{\hyperlink{_d_i_o__prog_8c_source}{DIO\+\_\+prog.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{_d_i_o__prog_8c_aa5aa458dc52abff52f73a7356386ae1f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_d_i_o__prog_8c_a5ca4a7430489d0f973fb878ea0d95538}\index{DIO\_prog.c@{DIO\_prog.c}!DIO\_u8SetPinValue@{DIO\_u8SetPinValue}}
+\index{DIO\_u8SetPinValue@{DIO\_u8SetPinValue}!DIO\_prog.c@{DIO\_prog.c}}
+\doxysubsubsection{\texorpdfstring{DIO\_u8SetPinValue()}{DIO\_u8SetPinValue()}}
+{\footnotesize\ttfamily \label{_d_i_o__prog_8c_a5ca4a7430489d0f973fb878ea0d95538} 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} DIO\+\_\+u8\+Set\+Pin\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}}}]{copy\+\_\+\+Port}{, }\item[{\mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1}{DIO\+\_\+\+Pin\+\_\+t}}}]{copy\+\_\+\+Pin\+Num}{, }\item[{\mbox{\hyperlink{_d_i_o__interface_8h_a62623c45c642f55900760eae93972003}{DIO\+\_\+\+Pin\+Val\+\_\+t}}}]{copy\+\_\+\+Val}{}\end{DoxyParamCaption})}
+
+
+
+Sets the value of a specific pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+\+Port} & The port of the pin. \\
+\hline
+{\em copy\+\_\+\+Pin\+Num} & The pin number. \\
+\hline
+{\em copy\+\_\+\+Val} & The value to set the pin (high or low). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8 Status of the operation (OK for success, NOK for failure). 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_d_i_o__prog_8c_source_l00111}{111}} of file \mbox{\hyperlink{_d_i_o__prog_8c_source}{DIO\+\_\+prog.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{_d_i_o__prog_8c_a5ca4a7430489d0f973fb878ea0d95538_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_d_i_o__prog_8c_a44d50ab797c7a5d5093711de72fb357a}\index{DIO\_prog.c@{DIO\_prog.c}!DIO\_u8SetPortDirection@{DIO\_u8SetPortDirection}}
+\index{DIO\_u8SetPortDirection@{DIO\_u8SetPortDirection}!DIO\_prog.c@{DIO\_prog.c}}
+\doxysubsubsection{\texorpdfstring{DIO\_u8SetPortDirection()}{DIO\_u8SetPortDirection()}}
+{\footnotesize\ttfamily \label{_d_i_o__prog_8c_a44d50ab797c7a5d5093711de72fb357a} 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} DIO\+\_\+u8\+Set\+Port\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}}}]{copy\+\_\+\+Port}{, }\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{copy\+\_\+u8\+Port\+Dir}{}\end{DoxyParamCaption})}
+
+
+
+Sets the direction of all pins in a port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+\+Port} & The port whose pins\textquotesingle{} directions are to be set. \\
+\hline
+{\em copy\+\_\+u8\+Port\+Dir} & The direction for all pins in the port. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8 Status of the operation (OK for success, NOK for failure). 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_d_i_o__prog_8c_source_l00082}{82}} of file \mbox{\hyperlink{_d_i_o__prog_8c_source}{DIO\+\_\+prog.\+c}}.
+
+\Hypertarget{_d_i_o__prog_8c_aaa619f07823dce35868135f206c46665}\index{DIO\_prog.c@{DIO\_prog.c}!DIO\_u8SetPortValue@{DIO\_u8SetPortValue}}
+\index{DIO\_u8SetPortValue@{DIO\_u8SetPortValue}!DIO\_prog.c@{DIO\_prog.c}}
+\doxysubsubsection{\texorpdfstring{DIO\_u8SetPortValue()}{DIO\_u8SetPortValue()}}
+{\footnotesize\ttfamily \label{_d_i_o__prog_8c_aaa619f07823dce35868135f206c46665} 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} DIO\+\_\+u8\+Set\+Port\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}}}]{copy\+\_\+\+Port}{, }\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{copy\+\_\+u8\+Port\+Val}{}\end{DoxyParamCaption})}
+
+
+
+Sets the value of all pins in a port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+\+Port} & The port whose pins\textquotesingle{} values are to be set. \\
+\hline
+{\em copy\+\_\+u8\+Port\+Val} & The value to set for all pins in the port. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8 Status of the operation (OK for success, NOK for failure). 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_d_i_o__prog_8c_source_l00161}{161}} of file \mbox{\hyperlink{_d_i_o__prog_8c_source}{DIO\+\_\+prog.\+c}}.
+
+\Hypertarget{_d_i_o__prog_8c_aefed199f8703f5ad6caff1a7d2a5641a}\index{DIO\_prog.c@{DIO\_prog.c}!DIO\_u8TogglePin@{DIO\_u8TogglePin}}
+\index{DIO\_u8TogglePin@{DIO\_u8TogglePin}!DIO\_prog.c@{DIO\_prog.c}}
+\doxysubsubsection{\texorpdfstring{DIO\_u8TogglePin()}{DIO\_u8TogglePin()}}
+{\footnotesize\ttfamily \label{_d_i_o__prog_8c_aefed199f8703f5ad6caff1a7d2a5641a} 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} DIO\+\_\+u8\+Toggle\+Pin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}}}]{copy\+\_\+\+Port}{, }\item[{\mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1}{DIO\+\_\+\+Pin\+\_\+t}}}]{copy\+\_\+\+Pin\+Num}{}\end{DoxyParamCaption})}
+
+
+
+Toggles the value of a specific pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+\+Port} & The port of the pin. \\
+\hline
+{\em copy\+\_\+\+Pin\+Num} & The pin number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8 Status of the operation (OK for success, NOK for failure). 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_d_i_o__prog_8c_source_l00231}{231}} of file \mbox{\hyperlink{_d_i_o__prog_8c_source}{DIO\+\_\+prog.\+c}}.
+
