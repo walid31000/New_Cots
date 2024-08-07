@@ -1,0 +1,436 @@
+\doxysection{DIO\+\_\+interface.\+h File Reference}
+\hypertarget{_d_i_o__interface_8h}{}\label{_d_i_o__interface_8h}\index{DIO\_interface.h@{DIO\_interface.h}}
+
+
+prototypes of public function API \& defines  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{_d_i_o__interface_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}} \{ \mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2a87112a632616e55a741c15dd35297ee0}{DIO\+\_\+\+PORTA}}
+, \mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2a386da5f5af4a2834f39d27b9391a04bd}{DIO\+\_\+\+PORTB}}
+, \mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2ac7c3aa7255fda14160dae11df9e34cdc}{DIO\+\_\+\+PORTC}}
+, \mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2a6cb30469b27807af14e59a9e8e85210b}{DIO\+\_\+\+PORTD}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for the available ports. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1}{DIO\+\_\+\+Pin\+\_\+t}} \{ \newline
+\mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1adb77dcd2d6402eadc90d112d8bc60f61}{DIO\+\_\+\+PIN0}}
+, \mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1a94e7776d75eb87e87d7d7f8c617a31f8}{DIO\+\_\+\+PIN1}}
+, \mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1a837d321579bca76ea8f1db43c6495dca}{DIO\+\_\+\+PIN2}}
+, \mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1aa5ad1ad7c30b1488cc8902e1e5ca6734}{DIO\+\_\+\+PIN3}}
+, \newline
+\mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1a7d7dfd60bdf37e05033f6397e4881593}{DIO\+\_\+\+PIN4}}
+, \mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1a2daa0621be83c92a0cb38b3b8e4c1154}{DIO\+\_\+\+PIN5}}
+, \mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1ab3d4c6703061e49fb868856f2da5a9e6}{DIO\+\_\+\+PIN6}}
+, \mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1a6502324248dfa9c081065f17039c989e}{DIO\+\_\+\+PIN7}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for the available pins. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_d_i_o__interface_8h_af1ef1fd95861ab1dcb1aaec712bc0cba}{DIO\+\_\+\+Pin\+Dir\+\_\+t}} \{ \mbox{\hyperlink{_d_i_o__interface_8h_af1ef1fd95861ab1dcb1aaec712bc0cbaa0804eb18afa096e20a82ba2e070fb7fd}{DIO\+\_\+\+PIN\+\_\+\+INPUT}}
+, \mbox{\hyperlink{_d_i_o__interface_8h_af1ef1fd95861ab1dcb1aaec712bc0cbaa57827935141b364af516d3946d654292}{DIO\+\_\+\+PIN\+\_\+\+OUTPUT}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for the pin direction. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_d_i_o__interface_8h_a62623c45c642f55900760eae93972003}{DIO\+\_\+\+Pin\+Val\+\_\+t}} \{ \mbox{\hyperlink{_d_i_o__interface_8h_a62623c45c642f55900760eae93972003af7435fba19988c874d379909bc72e438}{DIO\+\_\+\+PIN\+\_\+\+LOW}}
+, \mbox{\hyperlink{_d_i_o__interface_8h_a62623c45c642f55900760eae93972003aa0353118d8e53574fbe1ec4bb4bd543a}{DIO\+\_\+\+PIN\+\_\+\+HIGH}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for the pin values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_d_i_o__interface_8h_aa5aa458dc52abff52f73a7356386ae1f}{DIO\+\_\+u8\+Set\+Pin\+Direction}} (\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}} copy\+\_\+\+Port, \mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1}{DIO\+\_\+\+Pin\+\_\+t}} copy\+\_\+\+Pin\+Num, \mbox{\hyperlink{_d_i_o__interface_8h_af1ef1fd95861ab1dcb1aaec712bc0cba}{DIO\+\_\+\+Pin\+Dir\+\_\+t}} copy\+\_\+\+Dir)
+\begin{DoxyCompactList}\small\item\em Sets the direction of a specific pin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_d_i_o__interface_8h_ae4029baf1a096c403962da6aee6c4ae1}{DIO\+\_\+\+Set\+Port\+Direction}} (\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}} copy\+\_\+\+Port, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} copy\+\_\+u8\+Port\+\_\+\+Dir)
+\begin{DoxyCompactList}\small\item\em Sets the direction of all pins in a port. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_d_i_o__interface_8h_a5ca4a7430489d0f973fb878ea0d95538}{DIO\+\_\+u8\+Set\+Pin\+Value}} (\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}} copy\+\_\+\+Port, \mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1}{DIO\+\_\+\+Pin\+\_\+t}} copy\+\_\+\+Pin\+Num, \mbox{\hyperlink{_d_i_o__interface_8h_a62623c45c642f55900760eae93972003}{DIO\+\_\+\+Pin\+Val\+\_\+t}} copy\+\_\+\+Val)
+\begin{DoxyCompactList}\small\item\em Sets the value of a specific pin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_d_i_o__interface_8h_afc089ea502de419cc2aac36f6676eb1c}{DIO\+\_\+\+Set\+Port\+Value}} (\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}} copy\+\_\+\+Port, \mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} copy\+\_\+u8\+Port\+Val)
+\begin{DoxyCompactList}\small\item\em Sets the value of all pins in a port. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_d_i_o__interface_8h_ad8d3cd505765bc581d5eab44ffc2170f}{DIO\+\_\+u8\+Get\+Pin\+Value}} (\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}} copy\+\_\+\+Port, \mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1}{DIO\+\_\+\+Pin\+\_\+t}} copy\+\_\+\+Pin\+Num, \mbox{\hyperlink{_d_i_o__interface_8h_a62623c45c642f55900760eae93972003}{DIO\+\_\+\+Pin\+Val\+\_\+t}} \texorpdfstring{$\ast$}{*}copy\+\_\+p\+Val)
+\begin{DoxyCompactList}\small\item\em Gets the value of a specific pin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_d_i_o__interface_8h_aefed199f8703f5ad6caff1a7d2a5641a}{DIO\+\_\+u8\+Toggle\+Pin}} (\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}} copy\+\_\+\+Port, \mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1}{DIO\+\_\+\+Pin\+\_\+t}} copy\+\_\+\+Pin\+Num)
+\begin{DoxyCompactList}\small\item\em Toggles the value of a specific pin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+prototypes of public function API \& defines 
+
+\DoxyHorRuler{0}
+
+
+\begin{DoxyAuthor}{Author}
+Walid Megherbi ~\newline
+ {\itshape  Github\+: \href{https://github.com/walid31000}{\texttt{ https\+://github.\+com/walid31000}} } 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+31/5/2023 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Walid Megherbi
+\end{DoxyCopyright}
+ ~\newline
+
+
+{\bfseries{ Details }} {\bfseries{ Turn on the Led with each press on the switch ~\newline
+ {\bfseries{ Target }} ATMEGA 32 ~\newline
+ {\bfseries{ internal clock }} 8MHZ ~\newline
+ {\bfseries{ Compiler }} GCC }}
+
+Definition in file \mbox{\hyperlink{_d_i_o__interface_8h_source}{DIO\+\_\+interface.\+h}}.
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_Pin\_t@{DIO\_Pin\_t}}
+\index{DIO\_Pin\_t@{DIO\_Pin\_t}!DIO\_interface.h@{DIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{DIO\_Pin\_t}{DIO\_Pin\_t}}
+{\footnotesize\ttfamily \label{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1} 
+enum \mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1}{DIO\+\_\+\+Pin\+\_\+t}}}
+
+
+
+Enumeration for the available pins. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIO\_PIN0@{DIO\_PIN0}!DIO\_interface.h@{DIO\_interface.h}}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_PIN0@{DIO\_PIN0}}}\Hypertarget{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1adb77dcd2d6402eadc90d112d8bc60f61}\label{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1} 
+DIO\+\_\+\+PIN0&pin number 0 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIO\_PIN1@{DIO\_PIN1}!DIO\_interface.h@{DIO\_interface.h}}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_PIN1@{DIO\_PIN1}}}\Hypertarget{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1a94e7776d75eb87e87d7d7f8c617a31f8}\label{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1} 
+DIO\+\_\+\+PIN1&pin number 1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIO\_PIN2@{DIO\_PIN2}!DIO\_interface.h@{DIO\_interface.h}}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_PIN2@{DIO\_PIN2}}}\Hypertarget{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1a837d321579bca76ea8f1db43c6495dca}\label{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1} 
+DIO\+\_\+\+PIN2&pin number 2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIO\_PIN3@{DIO\_PIN3}!DIO\_interface.h@{DIO\_interface.h}}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_PIN3@{DIO\_PIN3}}}\Hypertarget{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1aa5ad1ad7c30b1488cc8902e1e5ca6734}\label{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1} 
+DIO\+\_\+\+PIN3&pin number 3 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIO\_PIN4@{DIO\_PIN4}!DIO\_interface.h@{DIO\_interface.h}}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_PIN4@{DIO\_PIN4}}}\Hypertarget{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1a7d7dfd60bdf37e05033f6397e4881593}\label{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1} 
+DIO\+\_\+\+PIN4&pin number 4 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIO\_PIN5@{DIO\_PIN5}!DIO\_interface.h@{DIO\_interface.h}}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_PIN5@{DIO\_PIN5}}}\Hypertarget{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1a2daa0621be83c92a0cb38b3b8e4c1154}\label{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1} 
+DIO\+\_\+\+PIN5&pin number 5 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIO\_PIN6@{DIO\_PIN6}!DIO\_interface.h@{DIO\_interface.h}}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_PIN6@{DIO\_PIN6}}}\Hypertarget{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1ab3d4c6703061e49fb868856f2da5a9e6}\label{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1} 
+DIO\+\_\+\+PIN6&pin number 6 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIO\_PIN7@{DIO\_PIN7}!DIO\_interface.h@{DIO\_interface.h}}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_PIN7@{DIO\_PIN7}}}\Hypertarget{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1a6502324248dfa9c081065f17039c989e}\label{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1} 
+DIO\+\_\+\+PIN7&pin number 7 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_d_i_o__interface_8h_source_l00049}{49}} of file \mbox{\hyperlink{_d_i_o__interface_8h_source}{DIO\+\_\+interface.\+h}}.
+
+\Hypertarget{_d_i_o__interface_8h_af1ef1fd95861ab1dcb1aaec712bc0cba}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_PinDir\_t@{DIO\_PinDir\_t}}
+\index{DIO\_PinDir\_t@{DIO\_PinDir\_t}!DIO\_interface.h@{DIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{DIO\_PinDir\_t}{DIO\_PinDir\_t}}
+{\footnotesize\ttfamily \label{_d_i_o__interface_8h_af1ef1fd95861ab1dcb1aaec712bc0cba} 
+enum \mbox{\hyperlink{_d_i_o__interface_8h_af1ef1fd95861ab1dcb1aaec712bc0cba}{DIO\+\_\+\+Pin\+Dir\+\_\+t}}}
+
+
+
+Enumeration for the pin direction. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIO\_PIN\_INPUT@{DIO\_PIN\_INPUT}!DIO\_interface.h@{DIO\_interface.h}}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_PIN\_INPUT@{DIO\_PIN\_INPUT}}}\Hypertarget{_d_i_o__interface_8h_af1ef1fd95861ab1dcb1aaec712bc0cbaa0804eb18afa096e20a82ba2e070fb7fd}\label{_d_i_o__interface_8h_af1ef1fd95861ab1dcb1aaec712bc0cba} 
+DIO\+\_\+\+PIN\+\_\+\+INPUT&Bit value for input state. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIO\_PIN\_OUTPUT@{DIO\_PIN\_OUTPUT}!DIO\_interface.h@{DIO\_interface.h}}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_PIN\_OUTPUT@{DIO\_PIN\_OUTPUT}}}\Hypertarget{_d_i_o__interface_8h_af1ef1fd95861ab1dcb1aaec712bc0cbaa57827935141b364af516d3946d654292}\label{_d_i_o__interface_8h_af1ef1fd95861ab1dcb1aaec712bc0cba} 
+DIO\+\_\+\+PIN\+\_\+\+OUTPUT&Bit value for output state. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_d_i_o__interface_8h_source_l00065}{65}} of file \mbox{\hyperlink{_d_i_o__interface_8h_source}{DIO\+\_\+interface.\+h}}.
+
+\Hypertarget{_d_i_o__interface_8h_a62623c45c642f55900760eae93972003}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_PinVal\_t@{DIO\_PinVal\_t}}
+\index{DIO\_PinVal\_t@{DIO\_PinVal\_t}!DIO\_interface.h@{DIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{DIO\_PinVal\_t}{DIO\_PinVal\_t}}
+{\footnotesize\ttfamily \label{_d_i_o__interface_8h_a62623c45c642f55900760eae93972003} 
+enum \mbox{\hyperlink{_d_i_o__interface_8h_a62623c45c642f55900760eae93972003}{DIO\+\_\+\+Pin\+Val\+\_\+t}}}
+
+
+
+Enumeration for the pin values. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIO\_PIN\_LOW@{DIO\_PIN\_LOW}!DIO\_interface.h@{DIO\_interface.h}}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_PIN\_LOW@{DIO\_PIN\_LOW}}}\Hypertarget{_d_i_o__interface_8h_a62623c45c642f55900760eae93972003af7435fba19988c874d379909bc72e438}\label{_d_i_o__interface_8h_a62623c45c642f55900760eae93972003} 
+DIO\+\_\+\+PIN\+\_\+\+LOW&Logic Low. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIO\_PIN\_HIGH@{DIO\_PIN\_HIGH}!DIO\_interface.h@{DIO\_interface.h}}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_PIN\_HIGH@{DIO\_PIN\_HIGH}}}\Hypertarget{_d_i_o__interface_8h_a62623c45c642f55900760eae93972003aa0353118d8e53574fbe1ec4bb4bd543a}\label{_d_i_o__interface_8h_a62623c45c642f55900760eae93972003} 
+DIO\+\_\+\+PIN\+\_\+\+HIGH&Logic High. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_d_i_o__interface_8h_source_l00077}{77}} of file \mbox{\hyperlink{_d_i_o__interface_8h_source}{DIO\+\_\+interface.\+h}}.
+
+\Hypertarget{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_Port\_t@{DIO\_Port\_t}}
+\index{DIO\_Port\_t@{DIO\_Port\_t}!DIO\_interface.h@{DIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{DIO\_Port\_t}{DIO\_Port\_t}}
+{\footnotesize\ttfamily \label{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2} 
+enum \mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}}}
+
+
+
+Enumeration for the available ports. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIO\_PORTA@{DIO\_PORTA}!DIO\_interface.h@{DIO\_interface.h}}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_PORTA@{DIO\_PORTA}}}\Hypertarget{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2a87112a632616e55a741c15dd35297ee0}\label{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2} 
+DIO\+\_\+\+PORTA&Port A \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIO\_PORTB@{DIO\_PORTB}!DIO\_interface.h@{DIO\_interface.h}}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_PORTB@{DIO\_PORTB}}}\Hypertarget{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2a386da5f5af4a2834f39d27b9391a04bd}\label{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2} 
+DIO\+\_\+\+PORTB&Port B \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIO\_PORTC@{DIO\_PORTC}!DIO\_interface.h@{DIO\_interface.h}}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_PORTC@{DIO\_PORTC}}}\Hypertarget{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2ac7c3aa7255fda14160dae11df9e34cdc}\label{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2} 
+DIO\+\_\+\+PORTC&Port C \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIO\_PORTD@{DIO\_PORTD}!DIO\_interface.h@{DIO\_interface.h}}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_PORTD@{DIO\_PORTD}}}\Hypertarget{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2a6cb30469b27807af14e59a9e8e85210b}\label{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2} 
+DIO\+\_\+\+PORTD&Port D \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_d_i_o__interface_8h_source_l00036}{36}} of file \mbox{\hyperlink{_d_i_o__interface_8h_source}{DIO\+\_\+interface.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_d_i_o__interface_8h_ae4029baf1a096c403962da6aee6c4ae1}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_SetPortDirection@{DIO\_SetPortDirection}}
+\index{DIO\_SetPortDirection@{DIO\_SetPortDirection}!DIO\_interface.h@{DIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{DIO\_SetPortDirection()}{DIO\_SetPortDirection()}}
+{\footnotesize\ttfamily \label{_d_i_o__interface_8h_ae4029baf1a096c403962da6aee6c4ae1} 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} DIO\+\_\+\+Set\+Port\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}}}]{copy\+\_\+\+Port}{, }\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{copy\+\_\+u8\+Port\+\_\+\+Dir}{}\end{DoxyParamCaption})}
+
+
+
+Sets the direction of all pins in a port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+\+Port} & The port whose pins\textquotesingle{} directions are to be set. \\
+\hline
+{\em copy\+\_\+u8\+Port\+Dir} & The direction for all pins in the port. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8 Status of the operation (0 for success, 1 for failure). 
+\end{DoxyReturn}
+\Hypertarget{_d_i_o__interface_8h_afc089ea502de419cc2aac36f6676eb1c}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_SetPortValue@{DIO\_SetPortValue}}
+\index{DIO\_SetPortValue@{DIO\_SetPortValue}!DIO\_interface.h@{DIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{DIO\_SetPortValue()}{DIO\_SetPortValue()}}
+{\footnotesize\ttfamily \label{_d_i_o__interface_8h_afc089ea502de419cc2aac36f6676eb1c} 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} DIO\+\_\+\+Set\+Port\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}}}]{copy\+\_\+\+Port}{, }\item[{\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}}}]{copy\+\_\+u8\+Port\+Val}{}\end{DoxyParamCaption})}
+
+
+
+Sets the value of all pins in a port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+\+Port} & The port whose pins\textquotesingle{} values are to be set. \\
+\hline
+{\em copy\+\_\+u8\+Port\+Val} & The value to set for all pins in the port. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8 Status of the operation (0 for success, 1 for failure). 
+\end{DoxyReturn}
+\Hypertarget{_d_i_o__interface_8h_ad8d3cd505765bc581d5eab44ffc2170f}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_u8GetPinValue@{DIO\_u8GetPinValue}}
+\index{DIO\_u8GetPinValue@{DIO\_u8GetPinValue}!DIO\_interface.h@{DIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{DIO\_u8GetPinValue()}{DIO\_u8GetPinValue()}}
+{\footnotesize\ttfamily \label{_d_i_o__interface_8h_ad8d3cd505765bc581d5eab44ffc2170f} 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} DIO\+\_\+u8\+Get\+Pin\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}}}]{copy\+\_\+\+Port}{, }\item[{\mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1}{DIO\+\_\+\+Pin\+\_\+t}}}]{copy\+\_\+\+Pin\+Num}{, }\item[{\mbox{\hyperlink{_d_i_o__interface_8h_a62623c45c642f55900760eae93972003}{DIO\+\_\+\+Pin\+Val\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{copy\+\_\+p\+Val}{}\end{DoxyParamCaption})}
+
+
+
+Gets the value of a specific pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+\+Port} & The port of the pin. \\
+\hline
+{\em copy\+\_\+\+Pin\+Num} & The pin number. \\
+\hline
+{\em copy\+\_\+p\+Val} & Pointer to store the retrieved value of the pin. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8 Status of the operation (0 for success, 1 for failure).
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+\+Port} & The port of the pin. \\
+\hline
+{\em copy\+\_\+\+Pin\+Num} & The pin number. \\
+\hline
+{\em copy\+\_\+p\+Val} & Pointer to store the retrieved value of the pin. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8 Status of the operation (OK for success, NOK for failure, NULL\+\_\+\+PTR for null pointer). 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_d_i_o__prog_8c_source_l00193}{193}} of file \mbox{\hyperlink{_d_i_o__prog_8c_source}{DIO\+\_\+prog.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{_d_i_o__interface_8h_ad8d3cd505765bc581d5eab44ffc2170f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_d_i_o__interface_8h_aa5aa458dc52abff52f73a7356386ae1f}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_u8SetPinDirection@{DIO\_u8SetPinDirection}}
+\index{DIO\_u8SetPinDirection@{DIO\_u8SetPinDirection}!DIO\_interface.h@{DIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{DIO\_u8SetPinDirection()}{DIO\_u8SetPinDirection()}}
+{\footnotesize\ttfamily \label{_d_i_o__interface_8h_aa5aa458dc52abff52f73a7356386ae1f} 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} DIO\+\_\+u8\+Set\+Pin\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}}}]{copy\+\_\+\+Port}{, }\item[{\mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1}{DIO\+\_\+\+Pin\+\_\+t}}}]{copy\+\_\+\+Pin\+Num}{, }\item[{\mbox{\hyperlink{_d_i_o__interface_8h_af1ef1fd95861ab1dcb1aaec712bc0cba}{DIO\+\_\+\+Pin\+Dir\+\_\+t}}}]{copy\+\_\+\+Dir}{}\end{DoxyParamCaption})}
+
+
+
+Sets the direction of a specific pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+\+Port} & The port of the pin. \\
+\hline
+{\em copy\+\_\+\+Pin\+Num} & The pin number. \\
+\hline
+{\em copy\+\_\+\+Dir} & The direction of the pin (input or output). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8 Status of the operation (0 for success, 1 for failure).
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+\+Port} & The port of the pin. \\
+\hline
+{\em copy\+\_\+\+Pin\+Num} & The pin number. \\
+\hline
+{\em copy\+\_\+\+Dir} & The direction of the pin (input or output). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8 Status of the operation (OK for success, NOK for failure). 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_d_i_o__prog_8c_source_l00032}{32}} of file \mbox{\hyperlink{_d_i_o__prog_8c_source}{DIO\+\_\+prog.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{_d_i_o__interface_8h_aa5aa458dc52abff52f73a7356386ae1f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_d_i_o__interface_8h_a5ca4a7430489d0f973fb878ea0d95538}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_u8SetPinValue@{DIO\_u8SetPinValue}}
+\index{DIO\_u8SetPinValue@{DIO\_u8SetPinValue}!DIO\_interface.h@{DIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{DIO\_u8SetPinValue()}{DIO\_u8SetPinValue()}}
+{\footnotesize\ttfamily \label{_d_i_o__interface_8h_a5ca4a7430489d0f973fb878ea0d95538} 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} DIO\+\_\+u8\+Set\+Pin\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}}}]{copy\+\_\+\+Port}{, }\item[{\mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1}{DIO\+\_\+\+Pin\+\_\+t}}}]{copy\+\_\+\+Pin\+Num}{, }\item[{\mbox{\hyperlink{_d_i_o__interface_8h_a62623c45c642f55900760eae93972003}{DIO\+\_\+\+Pin\+Val\+\_\+t}}}]{copy\+\_\+\+Val}{}\end{DoxyParamCaption})}
+
+
+
+Sets the value of a specific pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+\+Port} & The port of the pin. \\
+\hline
+{\em copy\+\_\+\+Pin\+Num} & The pin number. \\
+\hline
+{\em copy\+\_\+\+Val} & The value to set the pin (high or low). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8 Error Status of the operation (0 for success, 1 for failure).
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+\+Port} & The port of the pin. \\
+\hline
+{\em copy\+\_\+\+Pin\+Num} & The pin number. \\
+\hline
+{\em copy\+\_\+\+Val} & The value to set the pin (high or low). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8 Status of the operation (OK for success, NOK for failure). 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_d_i_o__prog_8c_source_l00111}{111}} of file \mbox{\hyperlink{_d_i_o__prog_8c_source}{DIO\+\_\+prog.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{_d_i_o__interface_8h_a5ca4a7430489d0f973fb878ea0d95538_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_d_i_o__interface_8h_aefed199f8703f5ad6caff1a7d2a5641a}\index{DIO\_interface.h@{DIO\_interface.h}!DIO\_u8TogglePin@{DIO\_u8TogglePin}}
+\index{DIO\_u8TogglePin@{DIO\_u8TogglePin}!DIO\_interface.h@{DIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{DIO\_u8TogglePin()}{DIO\_u8TogglePin()}}
+{\footnotesize\ttfamily \label{_d_i_o__interface_8h_aefed199f8703f5ad6caff1a7d2a5641a} 
+\mbox{\hyperlink{_s_t_d___t_y_p_e_s_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} DIO\+\_\+u8\+Toggle\+Pin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_i_o__interface_8h_af3a9cab084c3557359d2a2bd2586cbe2}{DIO\+\_\+\+Port\+\_\+t}}}]{copy\+\_\+\+Port}{, }\item[{\mbox{\hyperlink{_d_i_o__interface_8h_aeed2e52002b5f0aee4cf9d04210b54a1}{DIO\+\_\+\+Pin\+\_\+t}}}]{copy\+\_\+\+Pin\+Num}{}\end{DoxyParamCaption})}
+
+
+
+Toggles the value of a specific pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+\+Port} & The port of the pin. \\
+\hline
+{\em copy\+\_\+\+Pin\+Num} & The pin number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8 Status of the operation (0 for success, 1 for failure).
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+\+Port} & The port of the pin. \\
+\hline
+{\em copy\+\_\+\+Pin\+Num} & The pin number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8 Status of the operation (OK for success, NOK for failure). 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_d_i_o__prog_8c_source_l00231}{231}} of file \mbox{\hyperlink{_d_i_o__prog_8c_source}{DIO\+\_\+prog.\+c}}.
+

@@ -1,0 +1,141 @@
+\doxysection{BIT\+\_\+\+MATH.\+h File Reference}
+\hypertarget{_b_i_t___m_a_t_h_8h}{}\label{_b_i_t___m_a_t_h_8h}\index{BIT\_MATH.h@{BIT\_MATH.h}}
+
+
+Bit manipulation macros.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{_b_i_t___m_a_t_h_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_b_i_t___m_a_t_h_8h_af5e30856a7a74f3d594a838da84ba83a}{SET\+\_\+\+BIT}}(VAR,  BIT\+\_\+\+NUM)~( (VAR)\texorpdfstring{$\vert$}{|}=(1$<$$<$(BIT\+\_\+\+NUM) ) )
+\begin{DoxyCompactList}\small\item\em Macro to set a specific bit in a variable. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_b_i_t___m_a_t_h_8h_ae3d8b5b4719e147d4a76901703c1a13a}{CLR\+\_\+\+BIT}}(VAR,  BIT\+\_\+\+NUM)~((VAR)\&=(\texorpdfstring{$\sim$}{\string~}(1$<$$<$(BIT\+\_\+\+NUM))))
+\begin{DoxyCompactList}\small\item\em Macro to clear a specific bit in a variable. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_b_i_t___m_a_t_h_8h_a8a48989f95b58129476c41419e679fd3}{TOG\+\_\+\+BIT}}(VAR,  BIT\+\_\+\+NUM)~((VAR) \texorpdfstring{$^\wedge$}{\string^}=  (1$<$$<$(BIT\+\_\+\+NUM) ) )
+\begin{DoxyCompactList}\small\item\em Macro to toggle a specific bit in a variable. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_b_i_t___m_a_t_h_8h_a50f0c340fba7d0d2f2fa74b9a8a05223}{GET\+\_\+\+BIT}}(VAR,  BIT\+\_\+\+NUM)~( ((VAR)$>$$>$(BIT\+\_\+\+NUM) )\&1)
+\begin{DoxyCompactList}\small\item\em Macro to get the value of a specific bit in a variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Bit manipulation macros. 
+
+\DoxyHorRuler{0}
+
+
+This file contains macros for bit-\/level operations, such as setting, clearing, toggling, and getting the value of specific bits. \begin{DoxyAuthor}{Author}
+Walid Megherbi ~\newline
+ {\itshape  Github\+: \href{https://github.com/walid31000}{\texttt{ https\+://github.\+com/walid31000}} } 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+31/5/2023 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Walid Megherbi 
+\end{DoxyCopyright}
+
+
+Definition in file \mbox{\hyperlink{_b_i_t___m_a_t_h_8h_source}{BIT\+\_\+\+MATH.\+h}}.
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_b_i_t___m_a_t_h_8h_ae3d8b5b4719e147d4a76901703c1a13a}\index{BIT\_MATH.h@{BIT\_MATH.h}!CLR\_BIT@{CLR\_BIT}}
+\index{CLR\_BIT@{CLR\_BIT}!BIT\_MATH.h@{BIT\_MATH.h}}
+\doxysubsubsection{\texorpdfstring{CLR\_BIT}{CLR\_BIT}}
+{\footnotesize\ttfamily \label{_b_i_t___m_a_t_h_8h_ae3d8b5b4719e147d4a76901703c1a13a} 
+\#define CLR\+\_\+\+BIT(\begin{DoxyParamCaption}\item[{}]{VAR}{, }\item[{}]{BIT\+\_\+\+NUM}{}\end{DoxyParamCaption})~((VAR)\&=(\texorpdfstring{$\sim$}{\string~}(1$<$$<$(BIT\+\_\+\+NUM))))}
+
+
+
+Macro to clear a specific bit in a variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em VAR} & The variable in which the bit will be cleared. \\
+\hline
+{\em BIT\+\_\+\+NUM} & The bit number to clear (0-\/based). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_b_i_t___m_a_t_h_8h_source_l00043}{43}} of file \mbox{\hyperlink{_b_i_t___m_a_t_h_8h_source}{BIT\+\_\+\+MATH.\+h}}.
+
+\Hypertarget{_b_i_t___m_a_t_h_8h_a50f0c340fba7d0d2f2fa74b9a8a05223}\index{BIT\_MATH.h@{BIT\_MATH.h}!GET\_BIT@{GET\_BIT}}
+\index{GET\_BIT@{GET\_BIT}!BIT\_MATH.h@{BIT\_MATH.h}}
+\doxysubsubsection{\texorpdfstring{GET\_BIT}{GET\_BIT}}
+{\footnotesize\ttfamily \label{_b_i_t___m_a_t_h_8h_a50f0c340fba7d0d2f2fa74b9a8a05223} 
+\#define GET\+\_\+\+BIT(\begin{DoxyParamCaption}\item[{}]{VAR}{, }\item[{}]{BIT\+\_\+\+NUM}{}\end{DoxyParamCaption})~( ((VAR)$>$$>$(BIT\+\_\+\+NUM) )\&1)}
+
+
+
+Macro to get the value of a specific bit in a variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em VAR} & The variable from which the bit value will be retrieved. \\
+\hline
+{\em BIT\+\_\+\+NUM} & The bit number to get (0-\/based). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the specified bit (0 or 1). 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_b_i_t___m_a_t_h_8h_source_l00064}{64}} of file \mbox{\hyperlink{_b_i_t___m_a_t_h_8h_source}{BIT\+\_\+\+MATH.\+h}}.
+
+\Hypertarget{_b_i_t___m_a_t_h_8h_af5e30856a7a74f3d594a838da84ba83a}\index{BIT\_MATH.h@{BIT\_MATH.h}!SET\_BIT@{SET\_BIT}}
+\index{SET\_BIT@{SET\_BIT}!BIT\_MATH.h@{BIT\_MATH.h}}
+\doxysubsubsection{\texorpdfstring{SET\_BIT}{SET\_BIT}}
+{\footnotesize\ttfamily \label{_b_i_t___m_a_t_h_8h_af5e30856a7a74f3d594a838da84ba83a} 
+\#define SET\+\_\+\+BIT(\begin{DoxyParamCaption}\item[{}]{VAR}{, }\item[{}]{BIT\+\_\+\+NUM}{}\end{DoxyParamCaption})~( (VAR)\texorpdfstring{$\vert$}{|}=(1$<$$<$(BIT\+\_\+\+NUM) ) )}
+
+
+
+Macro to set a specific bit in a variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em VAR} & The variable in which the bit will be set. \\
+\hline
+{\em BIT\+\_\+\+NUM} & The bit number to set (0-\/based). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_b_i_t___m_a_t_h_8h_source_l00032}{32}} of file \mbox{\hyperlink{_b_i_t___m_a_t_h_8h_source}{BIT\+\_\+\+MATH.\+h}}.
+
+\Hypertarget{_b_i_t___m_a_t_h_8h_a8a48989f95b58129476c41419e679fd3}\index{BIT\_MATH.h@{BIT\_MATH.h}!TOG\_BIT@{TOG\_BIT}}
+\index{TOG\_BIT@{TOG\_BIT}!BIT\_MATH.h@{BIT\_MATH.h}}
+\doxysubsubsection{\texorpdfstring{TOG\_BIT}{TOG\_BIT}}
+{\footnotesize\ttfamily \label{_b_i_t___m_a_t_h_8h_a8a48989f95b58129476c41419e679fd3} 
+\#define TOG\+\_\+\+BIT(\begin{DoxyParamCaption}\item[{}]{VAR}{, }\item[{}]{BIT\+\_\+\+NUM}{}\end{DoxyParamCaption})~((VAR) \texorpdfstring{$^\wedge$}{\string^}=  (1$<$$<$(BIT\+\_\+\+NUM) ) )}
+
+
+
+Macro to toggle a specific bit in a variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em VAR} & The variable in which the bit will be toggled. \\
+\hline
+{\em BIT\+\_\+\+NUM} & The bit number to toggle (0-\/based). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_b_i_t___m_a_t_h_8h_source_l00054}{54}} of file \mbox{\hyperlink{_b_i_t___m_a_t_h_8h_source}{BIT\+\_\+\+MATH.\+h}}.
+

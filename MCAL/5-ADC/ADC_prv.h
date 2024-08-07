@@ -27,4 +27,11 @@
 #define   ENABLED               1
 #define   DISABLED              2
 
+
+#define IDLE                  0U
+#define BUSY                  1U
+
+
+#define   CHAIN_CONV_ASYNCH     1U
+#define   SINGLE_CONV_ASYNCH    0
 #endif
