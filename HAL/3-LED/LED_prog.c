@@ -69,7 +69,7 @@ uint8 LED_u8ToggleLed(const Led_config_t* copy_LedObject )
 
 	{
 
-		Dio_u8TogglePin(copy_LedObject->PORT,copy_LedObject->PIN);
+		DIO_u8TogglePin(copy_LedObject->PORT,copy_LedObject->PIN);
 	}
 
 	else
